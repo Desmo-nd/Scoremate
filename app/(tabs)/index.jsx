@@ -3,29 +3,33 @@ import {StyleSheet, ScrollView } from 'react-native';
 import Header from '../../components/Header';
 import Leagues from '../../components/Leagues';
 import LiveMatches from '../../components/LiveMatches'; 
-import { SIZES } from '@/constants/Sizes';
+import AllCategories from '../../components/AllCategories';
 
 import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
 import { Ionicons } from '@expo/vector-icons';
+import { SIZES } from '../../constants/Sizes';
+import TodayMatches from '../../components/TodayMatches';
 
 const index = () => {
   
     return (
-    <ThemedView contentContainerStyle={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
+      <ThemedView>
         <Header />
         <Leagues />
         <LiveMatches />
-    </ThemedView>
+        <TodayMatches />
+        <AllCategories />
+      </ThemedView>
+    </ScrollView>
     );
   };
   
   const styles = StyleSheet.create({
     container: {
       flexGrow: 1,
-      padding: 20,
-      // alignItems: 'center',
-
+      width: SIZES.width,
     },
     
   });
