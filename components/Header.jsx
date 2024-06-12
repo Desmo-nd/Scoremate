@@ -27,9 +27,10 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 40,
+    fontFamily: 'bold',
     padding: 20,
+    marginTop: 20,
   },
   icons:{
     padding: 20,

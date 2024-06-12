@@ -24,20 +24,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="Details"
-        options={{
-          title: 'Details',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'football' : 'football-outline'} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="Leagues"
         options={{
           title: 'Leagues',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'trophy' : 'trophy-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="News"
+        options={{
+          title: 'News',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'football' : 'football-outline'} color={color} />
           ),
         }}
       />
