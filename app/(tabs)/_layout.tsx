@@ -17,9 +17,9 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Matches',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <TabBarIcon name={focused ? 'time' : 'time-outline'} color={color} />
           ),
         }}
       />
@@ -28,7 +28,34 @@ export default function TabLayout() {
         options={{
           title: 'Details',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'football' : 'football-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Leagues"
+        options={{
+          title: 'Leagues',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'trophy' : 'trophy-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Favorites"
+        options={{
+          title: 'Favorites',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'notifications' : 'notifications-outline'} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
           ),
         }}
       />
