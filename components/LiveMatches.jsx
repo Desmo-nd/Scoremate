@@ -103,22 +103,24 @@ import { ScrollView, View, TouchableOpacity, StyleSheet, Image } from 'react-nat
 import { ThemedView } from '@/components/ThemedView';
 import { ThemedText } from '@/components/ThemedText';
 import { SIZES } from '../constants/Sizes';
-import { useRouter } from 'expo-router';
+import { useNavigation } from '@react-navigation/native';
 
 // Sample data for live matches (replace with actual data)
 const liveMatches = [
-    { id: 1, homeTeam: 'Chelsea', awayTeam: 'Manchester United', matchTime: '10:00', homeTeamImage: require('../assets/images/Chelsea.png'), awayTeamImage: require('../assets/images/manu.png') },
-    { id: 2, homeTeam: 'Manchester City', awayTeam: 'Arsenal', matchTime: '12:00', homeTeamImage: require('../assets/images/mc.png'), awayTeamImage: require('../assets/images/Arsenal.png') },
-    { id: 3, homeTeam: 'Borussia Dortmund', awayTeam: 'Aston Villa', matchTime: '14:00', homeTeamImage: require('../assets/images/Borussia.png'), awayTeamImage: require('../assets/images/villa.png') },
-    // Add more matches as needed
+  { id: 1, homeTeam: 'Chelsea', awayTeam: 'Manchester United', matchTime: '10:00', homeTeamImage: require('../assets/images/Chelsea.png'), awayTeamImage: require('../assets/images/manu.png') },
+  { id: 2, homeTeam: 'Manchester City', awayTeam: 'Arsenal', matchTime: '12:00', homeTeamImage: require('../assets/images/mc.png'), awayTeamImage: require('../assets/images/Arsenal.png') },
+  { id: 3, homeTeam: 'Borussia Dortmund', awayTeam: 'Aston Villa', matchTime: '14:00', homeTeamImage: require('../assets/images/Borussia.png'), awayTeamImage: require('../assets/images/villa.png') },
+  // Add more matches as needed
 ];
 
 const LiveMatches = () => {
-  const router = useRouter();
+  const navigation = useNavigation();
 
   const handlePress = () => {
-    router.navigate('GameStats');
-  };
+    // Navigate to the GameStats screen with the selected match
+    navigation.navigate('GameStats');
+  }
+
 
   return (
     <ThemedView style={styles.container}>
