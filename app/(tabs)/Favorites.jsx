@@ -17,15 +17,7 @@ const matches = [
   ];
 
 const Favorites = () => {
-    // const [favoriteMatches, setFavoriteMatches] = useState([]);
 
-    // useEffect(() => {
-    //   // Filter matches based on favorite teams
-    //   const filteredMatches = matches.filter(
-    //     (match) => favoriteTeams.includes(match.homeTeam.name) || favoriteTeams.includes(match.awayTeam.name)
-    //   );
-    //   setFavoriteMatches(filteredMatches);
-    // }, []);
   
     return (
         <SafeAreaView style={styles.container}>
