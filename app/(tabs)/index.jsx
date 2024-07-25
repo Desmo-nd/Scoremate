@@ -6,8 +6,6 @@ import LiveMatches from '../../components/LiveMatches';
 import AllCategories from '../../components/AllCategories';
 
 import { ThemedView } from '@/components/ThemedView';
-import { ThemedText } from '@/components/ThemedText';
-import { Ionicons } from '@expo/vector-icons';
 import { SIZES } from '../../constants/Sizes';
 import TodayMatches from '../../components/TodayMatches';
 
